@@ -29,6 +29,11 @@ struct ContentView: View {
                             }
                         }
                     }
+                    if(posts.moreItems) {
+                        Button(action: posts.loadMore){
+                            Text("Load More")
+                        }
+                    }
                 }
                 .navigationTitle("Posts")
             } else {
