@@ -51,12 +51,12 @@ class DataTableVC: UITableViewController {
         if (!usingLimitView) {
             let rowData = self.postData[indexPath.row]
             
-            let labelTitle: UILabel = cell.viewWithTag(1) as! UILabel
-            labelTitle.text = rowData.title
-            let labelBody: UILabel = cell.viewWithTag(2) as! UILabel
-            labelBody.text = rowData.body
-            let labelPostID: UILabel = cell.viewWithTag(3) as! UILabel
-            labelPostID.text = "Post ID: \(rowData.id)"
+            let labelTitle = cell.viewWithTag(1) as? UILabel
+            labelTitle?.text = rowData.title
+            let labelBody = cell.viewWithTag(2) as? UILabel
+            labelBody?.text = rowData.body
+            let labelPostID = cell.viewWithTag(3) as? UILabel
+            labelPostID?.text = "Post ID: \(rowData.id)"
         }
 
         return cell
