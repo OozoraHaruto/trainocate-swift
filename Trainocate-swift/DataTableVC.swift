@@ -11,6 +11,8 @@ class DataTableVC: UITableViewController {
     
     var postData: [Post] = []
     var limit: Int = 10
+    
+    private let activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.medium)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +21,12 @@ class DataTableVC: UITableViewController {
         self.tableView.dataSource = self
         self.title = "Posts"
         
+        showLoader()
+        
         getData { success in
             if (self.postData.count > 0 && success) {
                 DispatchQueue.main.async {
+                    self.hideLoader()
                     self.tableView.reloadData()
                 }
             }
@@ -79,7 +84,27 @@ class DataTableVC: UITableViewController {
     }
     
     
-    //MARK: API Call
+    // MARK: - Private methods
+    
+    // MARK: Activity Indicator
+    private func showLoader() {
+        DispatchQueue.main.async {
+            self.activityIndicator.center = self.view.center
+            self.activityIndicator.startAnimating()
+            self.view.addSubview(self.activityIndicator)
+            self.view.bringSubviewToFront(self.activityIndicator)
+        }
+    }
+    
+    private func hideLoader() {
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.activityIndicator.removeFromSuperview()
+        }
+        
+    }
+    
+    // MARK: - API Call
     
     func getData(completion: @escaping (Bool)->()){
         
