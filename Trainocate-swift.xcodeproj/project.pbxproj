@@ -15,6 +15,12 @@
 		F7AFEE6E270C398D0049B5BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AFEE6C270C398D0049B5BA /* LaunchScreen.storyboard */; };
 		F7AFEE78270C3D090049B5BA /* DataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFEE77270C3D090049B5BA /* DataTableVC.swift */; };
 		F7B32548270D554C001FB95F /* DataTableInstructorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B32547270D554C001FB95F /* DataTableInstructorVC.swift */; };
+		F7B32550270D7094001FB95F /* Trainocate_swiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3254F270D7094001FB95F /* Trainocate_swiftUIApp.swift */; };
+		F7B32552270D7094001FB95F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B32551270D7094001FB95F /* ContentView.swift */; };
+		F7B32554270D7098001FB95F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B32553270D7098001FB95F /* Assets.xcassets */; };
+		F7B32557270D7098001FB95F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7B32556270D7098001FB95F /* Preview Assets.xcassets */; };
+		F7B3255C270D7218001FB95F /* PostsDataObvObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3255B270D7218001FB95F /* PostsDataObvObj.swift */; };
+		F7B3255E270D7A3B001FB95F /* DataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B3255D270D7A3B001FB95F /* DataView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +34,24 @@
 		F7AFEE6F270C398D0049B5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7AFEE77270C3D090049B5BA /* DataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableVC.swift; sourceTree = "<group>"; };
 		F7B32547270D554C001FB95F /* DataTableInstructorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableInstructorVC.swift; sourceTree = "<group>"; };
+		F7B3254D270D7094001FB95F /* Trainocate-swiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trainocate-swiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B3254F270D7094001FB95F /* Trainocate_swiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trainocate_swiftUIApp.swift; sourceTree = "<group>"; };
+		F7B32551270D7094001FB95F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F7B32553270D7098001FB95F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F7B32556270D7098001FB95F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F7B3255B270D7218001FB95F /* PostsDataObvObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsDataObvObj.swift; sourceTree = "<group>"; };
+		F7B3255D270D7A3B001FB95F /* DataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F7AFEE5B270C39890049B5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B3254A270D7094001FB95F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				F7AFEE60270C39890049B5BA /* Trainocate-swift */,
+				F7B3254E270D7094001FB95F /* Trainocate-swiftUI */,
 				F7AFEE5F270C39890049B5BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				F7AFEE5E270C39890049B5BA /* Trainocate-swift.app */,
+				F7B3254D270D7094001FB95F /* Trainocate-swiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +93,27 @@
 				F7AFEE6F270C398D0049B5BA /* Info.plist */,
 			);
 			path = "Trainocate-swift";
+			sourceTree = "<group>";
+		};
+		F7B3254E270D7094001FB95F /* Trainocate-swiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				F7B3254F270D7094001FB95F /* Trainocate_swiftUIApp.swift */,
+				F7B32551270D7094001FB95F /* ContentView.swift */,
+				F7B3255D270D7A3B001FB95F /* DataView.swift */,
+				F7B32553270D7098001FB95F /* Assets.xcassets */,
+				F7B32555270D7098001FB95F /* Preview Content */,
+				F7B3255B270D7218001FB95F /* PostsDataObvObj.swift */,
+			);
+			path = "Trainocate-swiftUI";
+			sourceTree = "<group>";
+		};
+		F7B32555270D7098001FB95F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F7B32556270D7098001FB95F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +136,23 @@
 			productReference = F7AFEE5E270C39890049B5BA /* Trainocate-swift.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F7B3254C270D7094001FB95F /* Trainocate-swiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F7B32558270D7098001FB95F /* Build configuration list for PBXNativeTarget "Trainocate-swiftUI" */;
+			buildPhases = (
+				F7B32549270D7094001FB95F /* Sources */,
+				F7B3254A270D7094001FB95F /* Frameworks */,
+				F7B3254B270D7094001FB95F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Trainocate-swiftUI";
+			productName = "Trainocate-swiftUI";
+			productReference = F7B3254D270D7094001FB95F /* Trainocate-swiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -104,6 +164,9 @@
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					F7AFEE5D270C39890049B5BA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					F7B3254C270D7094001FB95F = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
@@ -122,6 +185,7 @@
 			projectRoot = "";
 			targets = (
 				F7AFEE5D270C39890049B5BA /* Trainocate-swift */,
+				F7B3254C270D7094001FB95F /* Trainocate-swiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +201,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F7B3254B270D7094001FB95F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B32557270D7098001FB95F /* Preview Assets.xcassets in Resources */,
+				F7B32554270D7098001FB95F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -149,6 +222,17 @@
 				F7AFEE62270C39890049B5BA /* AppDelegate.swift in Sources */,
 				F7AFEE64270C39890049B5BA /* SceneDelegate.swift in Sources */,
 				F7AFEE78270C3D090049B5BA /* DataTableVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B32549270D7094001FB95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B3255C270D7218001FB95F /* PostsDataObvObj.swift in Sources */,
+				F7B32552270D7094001FB95F /* ContentView.swift in Sources */,
+				F7B3255E270D7A3B001FB95F /* DataView.swift in Sources */,
+				F7B32550270D7094001FB95F /* Trainocate_swiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +430,66 @@
 			};
 			name = Release;
 		};
+		F7B32559270D7098001FB95F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trainocate-swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 84BDDMKF3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.b1rDi3x.Trainocate-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F7B3255A270D7098001FB95F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Trainocate-swiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 84BDDMKF3C;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.b1rDi3x.Trainocate-swiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -363,6 +507,15 @@
 			buildConfigurations = (
 				F7AFEE73270C398D0049B5BA /* Debug */,
 				F7AFEE74270C398D0049B5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F7B32558270D7098001FB95F /* Build configuration list for PBXNativeTarget "Trainocate-swiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F7B32559270D7098001FB95F /* Debug */,
+				F7B3255A270D7098001FB95F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
