@@ -13,12 +13,25 @@ class DataVC: UIViewController {
     @IBOutlet weak var lblBody: UILabel!
     @IBOutlet weak var lblPostID: UILabel!
     
-    func configure(data : Post) {
-        self.title = "Post ID: \(data.id)"
+    var postTitle: String = ""
+    var body: String = ""
+    var postID: Int = 0
+    
+//    init(title: String, body: String, postID: Int){
+//        super.init(nibName: nil, bundle: nil)
+//        self.title = title
+//        self.body = body
+//        self.postID = postID
+//    }
 
-        lblTitle.text = data.title
-        lblBody.text = data.body
-        lblPostID.text = "Post ID: \(data.id)"
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        lblTitle.text = postTitle
+        lblBody.text = body
+        lblPostID.text = "Post ID: \(postID)"
     }
+
+
 }
 
