@@ -74,10 +74,7 @@ class DataTableVC: UITableViewController {
         if (segue.identifier == "viewPostDetails") {
             let rowData = self.postData[self.tableView.indexPathForSelectedRow!.row]
             let vc:DataVC = segue.destination as! DataVC
-            vc.title = rowData.title
-            vc.postTitle = rowData.title
-            vc.body = rowData.body
-            vc.postID = rowData.id
+            vc.configure(data: rowData)
         }
     }
     
