@@ -14,6 +14,7 @@
 		F7AFEE6B270C398D0049B5BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AFEE6A270C398D0049B5BA /* Assets.xcassets */; };
 		F7AFEE6E270C398D0049B5BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AFEE6C270C398D0049B5BA /* LaunchScreen.storyboard */; };
 		F7AFEE78270C3D090049B5BA /* DataTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AFEE77270C3D090049B5BA /* DataTableVC.swift */; };
+		F7B32548270D554C001FB95F /* DataTableInstructorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B32547270D554C001FB95F /* DataTableInstructorVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F7AFEE6D270C398D0049B5BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7AFEE6F270C398D0049B5BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7AFEE77270C3D090049B5BA /* DataTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableVC.swift; sourceTree = "<group>"; };
+		F7B32547270D554C001FB95F /* DataTableInstructorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableInstructorVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				F7AFEE61270C39890049B5BA /* AppDelegate.swift */,
 				F7AFEE63270C39890049B5BA /* SceneDelegate.swift */,
+				F7AFEE77270C3D090049B5BA /* DataTableVC.swift */,
+				F7B32547270D554C001FB95F /* DataTableInstructorVC.swift */,
 				F7AFEE65270C39890049B5BA /* DataVC.swift */,
 				F7AFEE67270C39890049B5BA /* Main.storyboard */,
 				F7AFEE6A270C398D0049B5BA /* Assets.xcassets */,
 				F7AFEE6C270C398D0049B5BA /* LaunchScreen.storyboard */,
 				F7AFEE6F270C398D0049B5BA /* Info.plist */,
-				F7AFEE77270C3D090049B5BA /* DataTableVC.swift */,
 			);
 			path = "Trainocate-swift";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7AFEE66270C39890049B5BA /* DataVC.swift in Sources */,
+				F7B32548270D554C001FB95F /* DataTableInstructorVC.swift in Sources */,
 				F7AFEE62270C39890049B5BA /* AppDelegate.swift in Sources */,
 				F7AFEE64270C39890049B5BA /* SceneDelegate.swift in Sources */,
 				F7AFEE78270C3D090049B5BA /* DataTableVC.swift in Sources */,
