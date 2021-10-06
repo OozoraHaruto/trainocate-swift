@@ -20,13 +20,14 @@ class DataTableVC: UITableViewController {
         
         showLoader()
         
-        getData { success in
-            if (self.postData.count > 0 && success) {
+        getData { [weak self] success in
+            self?.hideLoader()
+            
+            if (self?.postData.count ?? 0 > 0 && success) {
                 DispatchQueue.main.async {
-                    self.tableView.delegate = self
-                    self.tableView.dataSource = self
-                    self.hideLoader()
-                    self.tableView.reloadData()
+                    self?.tableView.delegate = self
+                    self?.tableView.dataSource = self
+                    self?.tableView.reloadData()
                 }
             }
         }
