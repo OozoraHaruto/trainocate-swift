@@ -40,16 +40,15 @@ class DataTableVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.limit > self.postData.count ? self.postData.count : (self.limit + 1)
+        return self.limit >= self.postData.count ? self.postData.count : (self.limit + 1)
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cellIdentifier = "dataView"
-        if (self.limit < self.postData.count && indexPath.row == limit){
-            cellIdentifier = "addLimitRow"
-        }
+        let usingLimitView = self.limit < self.postData.count && indexPath.row == self.limit
+        let cellIdentifier = usingLimitView ? "addLimitRow" : "dataView"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        if (cellIdentifier == "dataView") {
+        
+        if (!usingLimitView) {
             let rowData = self.postData[indexPath.row]
             
             let labelTitle: UILabel = cell.viewWithTag(1) as! UILabel
