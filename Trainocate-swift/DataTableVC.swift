@@ -109,32 +109,38 @@ class DataTableVC: UITableViewController {
     func getData(completion: @escaping (Bool)->()){
         
         let session = URLSession.shared
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts")!
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts") else {
+            completion(false)
+            return
+        }
 //        print("Calling \(url)")
 
         let task = session.dataTask(with: url, completionHandler: { data, response, error in
 //            print(response)
+            if let _error = error {
+                print(_error)
+                completion(false)
+                return
+            }
             
-            if error != nil {
-                print(error)
+            guard let _data = data else {
                 completion(false)
                 return
             }
             
             // Serialize the data into an object
             do {
-                let json = try JSONDecoder().decode([Post].self, from: data! )
-                //try JSONSerialization.jsonObject(with: data!, options: [])
-                print(json) // an array of MyPosts...
+                let json = try JSONDecoder().decode([Post].self, from: _data)
+//                print(json) // an array of MyPosts...
                 self.postData = json
                 completion(true)
             } catch {
                 print("Error during JSON serialization: \(error.localizedDescription)")
+                completion(true)
             }
         })
         task.resume()
     }
-
 }
 
 
