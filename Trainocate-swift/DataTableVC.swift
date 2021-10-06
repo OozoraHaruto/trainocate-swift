@@ -16,9 +16,6 @@ class DataTableVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
         self.title = "Posts"
         
         showLoader()
@@ -26,6 +23,8 @@ class DataTableVC: UITableViewController {
         getData { success in
             if (self.postData.count > 0 && success) {
                 DispatchQueue.main.async {
+                    self.tableView.delegate = self
+                    self.tableView.dataSource = self
                     self.hideLoader()
                     self.tableView.reloadData()
                 }
